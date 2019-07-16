@@ -15,8 +15,8 @@ Judgements:
   2. Model Same Test Rate
 
 Part 1: AR(p) generator
-    1.1 get parameter: np.random
-    1.2 get AR(p): arma_generate_sample(ar, ma=0, size)
+  1 get parameter: np.random
+  2.get AR(p): arma_generate_sample(ar, ma=0, size)
 
 
 Part 2: Model Right Test
