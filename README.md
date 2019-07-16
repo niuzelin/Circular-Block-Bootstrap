@@ -20,8 +20,8 @@ Part 1: AR(p) generator
 
 
 Part 2: Model Right Test
-2.1 Model fit for the bootstrapped time series: ARMA(endog=ts, order=(p, 0))
-2.2 Residual Analysis: check whether residual is white noise or not
+    2.1 Model fit for the bootstrapped time series: ARMA(endog=ts, order=(p, 0))
+    2.2 Residual Analysis: check whether residual is white noise or not
         2.2.1 mean vs 0: 1 sample t test
         2.2.2 stationary test: AD Fuller, KPSS
         2.2.3 no significant autocorrelation among residuals: acorr_ljungbox(time series)
