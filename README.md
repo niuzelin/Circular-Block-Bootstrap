@@ -15,13 +15,13 @@ Judgements:
   2. Model Same Test Rate
 
 Specific Main Test Used:
-  Part 1: AR(p) generator
-    1.1 get parameter: np.random
-    1.2 get AR(p): arma_generate_sample(ar, ma=0, size)
-  
-  Part 2: Model Right Test
-    2.1 Model fit for the bootstrapped time series: ARMA(endog=ts, order=(p, 0))
-    2.2 Residual Analysis: check whether residual is white noise or not
+Part 1: AR(p) generator
+1.1 get parameter: np.random
+1.2 get AR(p): arma_generate_sample(ar, ma=0, size)
+
+Part 2: Model Right Test
+2.1 Model fit for the bootstrapped time series: ARMA(endog=ts, order=(p, 0))
+2.2 Residual Analysis: check whether residual is white noise or not
         2.2.1 mean vs 0: 1 sample t test
         2.2.2 stationary test: AD Fuller, KPSS
         2.2.3 no significant autocorrelation among residuals: acorr_ljungbox(time series)
